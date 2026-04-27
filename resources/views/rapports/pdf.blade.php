@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    {{-- STATISTIQUES --}}
+    <!-- {{-- STATISTIQUES --}}
     <div class="stats">
         <div class="stat-card">
             <div class="val">{{ $stats['total_articles'] }}</div>
@@ -66,7 +66,7 @@
             <div class="val" style="color:#DC2626">{{ $stats['articles_alerte'] }}</div>
             <div class="lbl">En alerte</div>
         </div>
-    </div>
+    </div> -->
 
     {{-- INVENTAIRE --}}
     <h2>Inventaire complet</h2>
