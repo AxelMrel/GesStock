@@ -80,7 +80,7 @@
                 <th>Seuil min.</th>
                 <th>Prix unitaire</th>
                 <th>Valeur stock</th>
-                <th>Statut</th>
+                <!-- <th>Statut</th> -->
             </tr>
         </thead>
         <tbody>
@@ -93,13 +93,13 @@
                     <td>{{ $article->stock_minimum }}</td>
                     <td>{{ number_format($article->prix_unitaire, 0, ',', ' ') }} FCFA</td>
                     <td>{{ number_format($article->quantite_stock * $article->prix_unitaire, 0, ',', ' ') }} FCFA</td>
-                    <td>
+                    <!-- <td>
                         @if($article->estEnAlerte())
                             <span class="badge-danger">⚠ Faible</span>
                         @else
                             <span class="badge-success">✓ Normal</span>
                         @endif
-                    </td>
+                    </td> -->
                 </tr>
             @endforeach
         </tbody>
@@ -146,7 +146,7 @@
 
     {{-- FOOTER --}}
     <div class="footer">
-        <span>StockCentre · Centre informatique du Bénin</span>
+        <span>StockCentre · MA Info</span>
         <span>Rapport généré le {{ now()->format('d/m/Y à H:i') }}</span>
     </div>
 

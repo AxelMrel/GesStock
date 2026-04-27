@@ -9,6 +9,36 @@
 {{-- ── CARTES STATISTIQUES ── --}}
 <div class="row g-3 mb-4">
 
+    {{-- ── EXPORT ── --}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="fw-bold mb-1" style="color:#1E3A5F">
+                        <i class="fas fa-download me-2" style="color:#2563EB"></i>
+                        Exporter les données
+                    </h6>
+                    <small class="text-muted">Téléchargez un rapport complet du stock actuel</small>
+                </div>
+                <div class="d-flex gap-2">
+                    <a href="{{ route('rapports.export-pdf') }}"
+                    class="btn btn-outline-danger"
+                    target="_blank">
+                        <i class="fas fa-file-pdf me-2"></i>Exporter en PDF
+                    </a>
+                    <a href="{{ route('articles.export.excel') }}"
+                    class="btn btn-outline-success">
+                        <i class="fas fa-file-excel me-2"></i>Exporter en Excel
+                    </a>
+                    <a href="{{ route('rapports.index') }}"
+                    class="btn btn-primary">
+                        <i class="fas fa-chart-bar me-2"></i>Voir les rapports
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-6 col-md-3">
         <div class="card h-100" style="border-left:4px solid #2563EB">
             <div class="card-body">
@@ -295,6 +325,8 @@
         </div>
     </div>
 </div>
+
+
 
 @endsection
 
