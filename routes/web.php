@@ -73,8 +73,8 @@ Route::middleware(['auth'])->group(function () {
             ->parameters(['fournisseurs' => 'fournisseur']);
 
         // Rapports
-        Route::get('/rapports',           [\App\Http\Controllers\RapportController::class, 'index'])->name('rapports.index');
-        Route::get('/rapports/export-pdf',[\App\Http\Controllers\RapportController::class, 'exportPdf'])->name('rapports.export-pdf');
+        Route::get('/rapports',            [\App\Http\Controllers\RapportController::class, 'index'])->name('rapports.index');
+        Route::get('/rapports/export-pdf', [\App\Http\Controllers\RapportController::class, 'exportPdf'])->name('rapports.export-pdf');
     });
 
     /*

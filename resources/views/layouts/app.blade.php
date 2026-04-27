@@ -264,7 +264,7 @@
                 </a>
             </li> -->
 
-            @if(auth()->user()->role !== 'consultant')
+            <!-- @if(auth()->user()->role !== 'consultant')
             <hr class="sidebar-divider">
 
             <li>
@@ -272,7 +272,7 @@
                     <i class="fas fa-file-pdf"></i><span>Rapports</span>
                 </a>
             </li>
-            @endif
+            @endif -->
 
             @if(auth()->user()->role === 'admin')
             <hr class="sidebar-divider">
